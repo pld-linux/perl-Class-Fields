@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Class
-%define	pnam	Fields
+%define		pdir	Class
+%define		pnam	Fields
 Summary:	%{pdir}::%{pnam} perl module 
 Summary(cs):	Modul %{pdir}::%{pnam} pro Perl
 Summary(da):	Perlmodul %{pdir}::%{pnam}
@@ -18,7 +18,7 @@ Summary(ru):	Модуль для Perl %{pdir}::%{pnam}
 Summary(sv):	%{pdir}::%{pnam} Perlmodul
 Summary(uk):	Модуль для Perl %{pdir}::%{pnam}
 Summary(zh_CN):	%{pdir}::%{pnam} Perl дё©И
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-Class-Fields
 Version:	0.14
 Release:	1
 License:	?
