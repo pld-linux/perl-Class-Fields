@@ -10,7 +10,7 @@ Summary(pl):	Class::Fields - dogl±danie sk³adowych klasy
 Name:		perl-Class-Fields
 Version:	0.201
 Release:	1
-License:	GPL or Artistic
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c4fbfdfa1219742dd971ab731ba26c2e
