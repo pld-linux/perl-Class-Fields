@@ -8,12 +8,12 @@
 Summary:	Class::Fields - inspect the fields of a class
 Summary(pl):	Class::Fields - dogl±danie sk³adowych klasy
 Name:		perl-Class-Fields
-Version:	0.15
-Release:	4
+Version:	0.16
+Release:	1
 License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	536ba4dd740c1ceb30e322db98b6f0b6
+# Source0-md5:	0f62dd9e464f357eab2d6c75e65aa7c6
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-Carp-Assert
 BuildRequires:	rpm-perlprov >= 4.1-13
