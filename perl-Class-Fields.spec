@@ -33,7 +33,7 @@ wytrzymaæ próbê czasu i uaktualnienia Perla.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL INSTALLDIRS=site
+%{__perl} Makefile.PL INSTALLDIRS=site
 %{__make}
 
 %{!?_without_tests:%{__make} test}
