@@ -16,7 +16,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	c4fbfdfa1219742dd971ab731ba26c2e
 BuildRequires:	perl-Carp-Assert
 BuildRequires:	perl(base) >= 2.0
-BuildRequires:	perl-devel >= 5.8.1
+BuildRequires:	perl-devel >= 1:5.8.1
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl(base) >= 2.0
 Requires:	perl-base >= 5.8.1
