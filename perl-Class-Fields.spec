@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Class
-%define	pnam	Fields
+%define		pdir	Class
+%define		pnam	Fields
 Summary:	Class::Fields - inspect the fields of a class
 Summary(pl):	Class::Fields - dogl±danie sk³adowych klasy
 Name:		perl-Class-Fields
