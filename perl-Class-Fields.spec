@@ -5,11 +5,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Class
 %define		pnam	Fields
-Summary:	Class::Fields - Inspect the fields of a class
-Summary(pl):	Class::Fields - Dogl±danie sk³adowych klasy
+Summary:	Class::Fields - inspect the fields of a class
+Summary(pl):	Class::Fields - dogl±danie sk³adowych klasy
 Name:		perl-Class-Fields
 Version:	0.15
-Release:	1
+Release:	3
 License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
