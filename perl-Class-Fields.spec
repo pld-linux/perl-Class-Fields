@@ -25,15 +25,21 @@ License:	?
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
+BuildRequires:	perl-Carp-Assert
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 Conflicts:	perl <= 5.6.1-45
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+A collection of utility functions/methods for examining the data
+members of a class. It provides a nice, high-level interface that
+should stand the test of time and Perl upgrades nicely.
 
-# %description -l pl
-# TODO
+%description -l pl
+Zestaw funkcji i metod narzêdziowych do sprawdzania sk³adowych
+klasy. Daj± przyjemny, wysokopoziomowy interfejs, który powinien
+wytrzymaæ próbê czasu i uaktualnienia Perla.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
