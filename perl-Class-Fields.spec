@@ -21,7 +21,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # needed only for perl >= 5.9
-%define		_noautoreq	perl(Hash::Util)
+%define		_noautoreq	'perl(Hash::Util)'
 
 %description
 A collection of utility functions/methods for examining the data
