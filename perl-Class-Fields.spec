@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Class
@@ -8,15 +8,18 @@
 Summary:	Class::Fields - inspect the fields of a class
 Summary(pl):	Class::Fields - dogl±danie sk³adowych klasy
 Name:		perl-Class-Fields
-Version:	0.16
+Version:	0.201
 Release:	1
 License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0f62dd9e464f357eab2d6c75e65aa7c6
-BuildRequires:	perl-devel >= 5.6.1
+# Source0-md5:	c4fbfdfa1219742dd971ab731ba26c2e
 BuildRequires:	perl-Carp-Assert
+BuildRequires:	perl(base) >= 2.0
+BuildRequires:	perl-devel >= 5.8.1
 BuildRequires:	rpm-perlprov >= 4.1-13
+Requires:	perl(base) >= 2.0
+Requires:	perl-base >= 5.8.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -34,15 +37,17 @@ wytrzymaæ próbê czasu i uaktualnienia Perla.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=site \
+%{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
