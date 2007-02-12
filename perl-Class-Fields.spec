@@ -6,7 +6,7 @@
 %define		pdir	Class
 %define		pnam	Fields
 Summary:	Class::Fields - inspect the fields of a class
-Summary(pl):	Class::Fields - dogl±danie sk³adowych klasy
+Summary(pl.UTF-8):   Class::Fields - doglÄ…danie skÅ‚adowych klasy
 Name:		perl-Class-Fields
 Version:	0.201
 Release:	4
@@ -28,10 +28,10 @@ A collection of utility functions/methods for examining the data
 members of a class. It provides a nice, high-level interface that
 should stand the test of time and Perl upgrades nicely.
 
-%description -l pl
-Zestaw funkcji i metod narzêdziowych do sprawdzania sk³adowych
-klasy. Daj± przyjemny, wysokopoziomowy interfejs, który powinien
-wytrzymaæ próbê czasu i uaktualnienia Perla.
+%description -l pl.UTF-8
+Zestaw funkcji i metod narzÄ™dziowych do sprawdzania skÅ‚adowych
+klasy. DajÄ… przyjemny, wysokopoziomowy interfejs, ktÃ³ry powinien
+wytrzymaÄ‡ prÃ³bÄ™ czasu i uaktualnienia Perla.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
