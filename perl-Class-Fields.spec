@@ -6,7 +6,7 @@
 %define		pdir	Class
 %define		pnam	Fields
 Summary:	Class::Fields - inspect the fields of a class
-Summary(pl.UTF-8):   Class::Fields - doglądanie składowych klasy
+Summary(pl.UTF-8):	Class::Fields - doglądanie składowych klasy
 Name:		perl-Class-Fields
 Version:	0.201
 Release:	4
