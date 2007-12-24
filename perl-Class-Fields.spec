@@ -12,8 +12,9 @@ Version:	0.203
 Release:	1
 License:	unknown
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Class/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	fd91cb4bb99825e75fa646501e1cb621
+URL:		http://search.cpan.org/dist/Class-Fields/
 BuildRequires:	perl-Carp-Assert
 BuildRequires:	perl(base) >= 2.0
 BuildRequires:	perl-devel >= 1:5.8.1
